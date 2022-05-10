@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>*{
+            box-sizing: border-box;
+        }
+        *::before{
+            box-sizing: border-box;
+        }
+        *::after{
+            box-sizing: border-box;
+        }
+        #html{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50vh;
+        }
+        #demo2{
+            display: none;
+        }
+        #demo{
+            position: fixed;
+            height: 50vh;
+            top:0;
+            left: 0;
+            width: 100%;
+            overflow-y: auto;
+        }
+        #demo::-webkit-scrollbar{
+            display: none;
+        }
+        #buttons{
+            position: fixed;
+            top: 0;
+            right: 0;
+            margin-right: 10px;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            z-index: 11;
+        }
+        #buttons>button{
+            margin-bottom: 10px;
+            padding: 4px 8px;
+        }</style>
+</head>
+<body>
+<style id="demo2"></style>
+<div id="demo"></div>
+<div id="buttons">
+    <button id="btnPause">暂停</button>
+    <button id="btnPlay">播放</button>
+    <button id="btnSlow">慢速</button>
+    <button id="btnNormal">中速</button>
+    <button id="btnFast">快速</button>
+    <button id="btnClear">清空</button>
+    <button id="btnEnd">展示</button>
+</div>
+<div id="html">
+    <div class="container">
+        <div class="randar-box">
+            <div class="randar-content">
+                <div class="randar-ball"></div>
+                <div class="randar-ball"></div>
+                <div class="randar-ball"></div>
+                <div class="randar-ball"></div>
+                <div class="randar-pos"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="test.4a7e6b6d.js"></script>
+</body>
+</html>
